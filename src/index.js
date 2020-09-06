@@ -1,6 +1,6 @@
 (async function() {
   const BASE_URL = "https://test.gordiansoftware.com/v1.3";
-  const FLIGHT_STRING = "JFK*2020-08-30T18:55*CQ*777*FRA*2020-08-30T07:35";
+  const FLIGHT_STRING = "JFK*2021-08-30T18:55*CQ*777*FRA*2021-08-30T07:35";
   const CACHE_URL = `${BASE_URL}/funnel/cache?agent_id=demo&adults=1&flight_string=${FLIGHT_STRING}&fare_basis=YABDSC123&fare_classes=Y&fare_families=Economy,Economy`;
 
   const response = await fetch(CACHE_URL);
